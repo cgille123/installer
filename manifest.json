@@ -1,0 +1,16 @@
+{
+  "name": "My Accessory Software",
+  "version": "1.0.0",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        { "path": "names.ino.bootloader.bin", "offset": 0 },
+        { "path": "names.ino.partitions.bin", "offset": 32768 },
+        { "path": "boot_app0.bin", "offset": 57344 },
+        { "path": "names.ino.bin", "offset": 65536 }
+      ]
+    }
+  ]
+}
