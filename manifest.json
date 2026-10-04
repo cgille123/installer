@@ -1,15 +1,27 @@
 {
-  "name": "My Accessory Software",
-  "version": "1.0.0",
+  "name": "neXus",
+  "version": "1.0.1",
   "new_install_prompt_erase": true,
   "builds": [
     {
       "chipFamily": "ESP32-S3",
       "parts": [
-        { "path": "scramble.ino.bootloader.bin", "offset": 0 },
-        { "path": "scramble.ino.partitions.bin", "offset": 32768 },
-        { "path": "boot_app0.bin", "offset": 57344 },
-        { "path": "scramble.ino.bin", "offset": 65536 }
+        {
+          "path": "scramble.ino.bootloader.bin",
+          "offset": 0
+        },
+        {
+          "path": "scramble.ino.partitions.bin",
+          "offset": 32768
+        },
+        {
+          "path": "boot_app0.bin",
+          "offset": 57344
+        },
+        {
+          "path": "neXus.bin",
+          "offset": 65536
+        }
       ]
     }
   ]
